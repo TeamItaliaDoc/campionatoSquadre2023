@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8"> 
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<script type="text/javascript" src="js/jquery-2.0.3.js"> </script>
+
+
+<!--
+<script>
+    document.write('<script type="text/javascript"  src="js/campionatoSquadre.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+    document.write('<script type="text/javascript"  src="js/giocatori.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+    document.write('<script type="text/javascript"  src="js/presenze.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+    document.write('<link rel="stylesheet" href="css/campionatoSquadre.css?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+</script>
+-->
+<script>
+    document.write('<script type="text/javascript"  src="js/campionatoSquadre.js"\><\/script>');
+        document.write('<script type="text/javascript"  src="js/presenze.js"\><\/script>');
+    document.write('<script type="text/javascript"  src="js/giocatori.js"\><\/script>');
+    document.write('<link rel="stylesheet" href="css/campionatoSquadre.css"\><\/script>');
+</script>
+
+</head>
+
+<!-- rilancio la pagina con un parametro per farla caricare se cambiata -->
+<script>
+    var query = window.location.search.substring(1);
+    if (!query)
+      window.location = 'index.html?dev=' + Math.floor(Math.random() * 100);
+    if (query == 'admin')
+    {
+        CAMPIONATO.isAdmin = true;
+    }   
+</script>
+    
+<body>
+    
+<!--                            INTESTAZIONE                                        -->   
+<main align=”center” class="frame-principale"> 
+<div class="intestazione-img">
+    <a href="https://www.chess.com/club/team-italia-doc"  target=”_blank”> <img height="125" width="125" src="img/TID.jpeg"></a>
+</div>
+<div>
+    <h1 class="intestazione-titolo">Campionato a Squadre Team Italia DOC</h1>
+    <br>
+    <h1 class="intestazione-piede">Classifica 2023-24</h1>
+    <HR>
+</div>
+
+<!--                            Menu                                        -->   
+<spam class="menu" >
+    <select  onchange="window.location=this.options[this.selectedIndex].value">
+        <option value="">Terminati...</option>
+        <option value="https://teamitaliadoc.github.io/campionatoSquadre2022">Campionato a squadre 2022-23</option>    
+        <option value="https://teamitaliadoc.github.io/campionatoSquadre2021">Campionato a squadre 2021-22</option>    
+        <option value="https://teamitaliadoc.github.io/TrofeoPrimavera">Trofeo di Primavera</option>    
+        <option value="https://teamitaliadoc.github.io/CampionatoSocialeCategoria2020">Campionato categoria 2019</option>   
+        <option value="https://teamitaliadoc.github.io/battagliaFinale">Battaglia finale 2019</option>   
+        <option value="https://teamitaliadoc.github.io/Calvario2019">Calvario 2019</option>   
+        <option value="https://teamitaliadoc.github.io/campionatoSquadre2019/index.html">Campionato a squadre 2019</option>    
+        <option value="https://teamitaliadoc.github.io/Carosello2019/index.html">Carosello 2019</option>   
+        <option value="https://teamitaliadoc.github.io/campionatoSociale2019I/index.html">Campionato sociale 2019</option>    
+        <option value="https://teamitaliadoc.github.io/campionatoSociale2018/index.html">Campionato sociale 2018</option>    
+      </select>
+    </spam>
+    <spam class="menu" >
+    </spam>
+    <!--<spam class="menu" >
+        <select  onchange="window.location=this.options[this.selectedIndex].value">
+            <option value="">In corso...</option>
+        </select>
+    </spam>
+    -->
+    <spam class="menu" >
+        <a  class="menu" href="https://teamitaliadoc.github.io/hallOfFame/index.html?d">Hall of fame </a>
+     </spam>
+     <spam class="menu" >
+        <select  onchange="window.location=this.options[this.selectedIndex].value">
+            <option value="">Video...</option>
+            <option value="https://youtu.be/xCvnI2K0VN8">Inno</option>    
+            <option value="https://www.youtube.com/watch?v=9rjMwIiODsw">Compleanno 2019</option>    
+          </select>
+        </spam>
+        <HR> 
+
+
+
+<table align="left" width="950px" height="100px">
+    <tr> </tr>
+    <tr> </tr>
+<tr> <td><h1 class="intestazione-gironi">Classifica Squadre </h1></td> </tr>
+<!--                            SEPARATORE                                         <tr> <td><h1 class="intestazione-help">La classifica del Campionato è formata dalla somma dei punti ottenuti nei nove incontri previsti dal calendario. Il punteggio finale degli incontri è attribuito sommando, per ciascuna squadra, i punti ottenuti nelle diverse partite (1 punto per la vittoria, ½ punto per la patta): prende 1 punto la squadra vincente, 0 punti la squadra perdente, ½ punto ciascuna squadra in caso di parità. 
+-->
+</h1></td></tr>
+</table>
+<!--                            CLASSIFICA                                      -->   
+<div>
+<table  id="classifica" class="classifica-tabella">
+
+    <tr class="classifica-intestazione">
+    </tr>
+    
+</table>
+
+</div>
+
+    
+<!--                            SEPARATORE                                      -->   
+<table align="left" width="960px" height="100px">
+    <tr> </tr>
+    <tr> </tr>
+<tr> <td><h1 class="intestazione-gironi">Migliori giocatori</h1></td> </tr>
+</table>
+<!--                            Giocatori                                      -->   
+<div>
+<table  id="giocatori1" class="classifica-giocatori">
+    <tr class="classifica-intestazione">
+        <td class="classifica-col11"></td> <!-- posizione -->
+        <td class="giocatori-col1SEP">  </td>
+        <td class="classifica-col2">Giocatore</td> 
+        <td class="classifica-col2">Squadra</td> 
+        <td class="classifica-col3">Punti</td>
+      <!--   <td class="classifica-col2">Tie Break</td>  -->
+        <td class="classifica-col4">Risultati</td>
+<!--        <td class="classifica-col5">#1</td>
+        <td class="classifica-col5">#2</td>
+        <td class="classifica-col5">#3</td>
+        <td class="classifica-col5">#4</td>
+        <td class="classifica-col5">#5</td>
+        <td class="classifica-col5">#6</td>
+        <td class="classifica-col5">#7</td>
+        -->
+    </tr>
+
+</table>
+<!--                            SEPARATORE                                     -->   
+<table align="left" width="960px" height="100px">
+    <tr> </tr>
+    <tr> </tr>
+<tr> <td><h1 class="intestazione-gironi">Composizione Teams</h1></td> </tr>
+</table>
+<!--                            Squadre                                      -->   
+<div>
+<table  id="squadre" class="classifica-tabella">
+    <tr class="classifica-intestazione">
+        <td class="squadre-colPos">Pos.</td> 
+        <td class="squadre-col1SEP"></td> 
+        <td class="squadre-colICO">Team</td> 
+        <td class="squadre-col1"></td> 
+        <td class="squadre-col1SEP">  </td>
+        <td class="squadre-col2">Giocatori</td> 
+    <!--    <td class="squadre-col3">Giocatori totale/attivi</td>
+        <td class="squadre-col3">Elo totale</td>
+        <td class="squadre-col3">Elo medio</td>
+    -->
+
+</tr>
+
+</table>            
+
+<!--                            IMMAGINE  -  LOGO   -->
+    <table  width="950px" height="50px" class="Powered">
+    <tr>
+        <td></td> 
+    </tr>
+</table>
+
+<table  width="950px"   class="Powered">
+
+    <tr>
+            <td align="left" width="950px">Realizzato da Sandro2116 & TheMoonlightKnight</td> 
+        </tr>
+    </table> 
+
+
+
+    <script type="text/javascript"> 
+        elabora();
+    </script>
+</main>
+
+</html>
+
