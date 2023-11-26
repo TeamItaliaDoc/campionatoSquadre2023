@@ -20,11 +20,11 @@ matchs[11] = {"turno":"A", "id":"https://api.chess.com/pub/match/1536873", "pena
 matchs[12] = {"turno":"A", "id":"https://api.chess.com/pub/match/1536871", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 matchs[13] = {"turno":"A", "id":"https://api.chess.com/pub/match/1536869", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 
-/*
-matchs[21] = {"turno":"A", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-matchs[22] = {"turno":"A", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-matchs[23] = {"turno":"A", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[21] = {"turno":"A", "id":"https://api.chess.com/pub/match/1546073", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[22] = {"turno":"A", "id":"https://api.chess.com/pub/match/1546077", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[23] = {"turno":"A", "id":"https://api.chess.com/pub/match/1546071", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 
+/*
 matchs[31] = {"turno":"A", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 matchs[32] = {"turno":"A", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 matchs[33] = {"turno":"A", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
@@ -537,6 +537,7 @@ function calcolaClassifica()
             '<td class="classifica-risultati">' + teams[gruppo].puntiConclusi + '</td>' +
             '<td class="classifica-risultati">' + teams[gruppo].giocatoriRegistrati+ '</td>' +
             '<td class="classifica-col1SEP" style="border: 0px;"></td>'; 
+
         for (var ii in classificaTeams)         
         {
             gruppoAvversario  = classificaTeams[ii];
@@ -549,8 +550,10 @@ function calcolaClassifica()
             partitaConclusa = false;
             if  (gruppo == gruppoAvversario)
             {
+                //Stessa squadra
                 url = '';
                 stile = 'background-color:#b3b3b3;';
+                stRiga += '<td class="classifica-punti" style="' + stile + '"> </td>'
             } else {
                 //Ricerco partita
                 boards = 0;
@@ -559,7 +562,6 @@ function calcolaClassifica()
                 for (var partita in matchs)         
                 {
                     //team da stampare sulla riga è team1
-                    debugger;
                     if (matchs[partita].team1 == gruppo && matchs[partita].team2 == gruppoAvversario)
                     {
                         url = matchs[partita].url;
@@ -668,7 +670,7 @@ function calcolaClassifica()
                     
                //Scrivo valori calcolati nella cella
                if (url == '')  { //stessa squadra
-                   stRiga += '<td class="classifica-punti" style="' + stile + '"> </td>'
+                stRiga += '<td class="classifica-punti" style="' + stile + '"> </td>'
                } else {
                   if (risultato_R == '') {
                      stRiga += '<td ' + stileTD_A + '> <a style="text-decoration: none;font-weight: normal;' + stile_A + ' " href="' + url_A +'" target=”_blank”>' + risultato_A + '</a></td>';
