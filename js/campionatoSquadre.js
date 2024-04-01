@@ -36,15 +36,16 @@ matchs[42] = {"turno":"A", "id":"https://api.chess.com/pub/match/1568901", "pena
 matchs[43] = {"turno":"A", "id":"https://api.chess.com/pub/match/1568897", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 
 //Febbraio 2024 1) Aquile - Raminghi / 2) Cavalieri - Nazgul 3) Compagnia - Ent
-//matchs[51] = {"turno":"A", "id":"https://api.chess.com/pub/match/1583733", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-//matchs[52] = {"turno":"A", "id":"https://api.chess.com/pub/match/1583731", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-//matchs[53] = {"turno":"A", "id":"https://api.chess.com/pub/match/1583735", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[51] = {"turno":"A", "id":"https://api.chess.com/pub/match/1583733", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[52] = {"turno":"A", "id":"https://api.chess.com/pub/match/1583731", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[53] = {"turno":"A", "id":"https://api.chess.com/pub/match/1583735", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+
+//Marzo 2024 1) aquile - cavalieri / 2) compagnia raminghi / 3) Ent nazgul
+matchs[111] = {"turno":"R", "id":"https://api.chess.com/pub/match/1595809", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[112] = {"turno":"R", "id":"https://api.chess.com/pub/match/1595811", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[113] = {"turno":"R", "id":"https://api.chess.com/pub/match/1595815", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 
 /*
-matchs[111] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-matchs[112] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-matchs[113] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-
 matchs[121] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 matchs[122] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 matchs[123] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
@@ -510,6 +511,7 @@ function calcolaClassifica()
     var penalità1 = '';
     var penalità2 = '';
     var partitaConclusa = false;
+    var turno = '';
     //Riga con nomi teams    
     var stRiga = '<tr class="classifica-nameTeam">' +
             '<td style="background-color:gray;"></td><td style="background-color:gray;"></td><td style="background-color:gray;">' + 
@@ -552,6 +554,7 @@ function calcolaClassifica()
             stileTD_R = '';
             risultato_R = '';
             partitaConclusa = false;
+            turno : '';
             if  (gruppo == gruppoAvversario)
             {
                 //Stessa squadra
@@ -581,8 +584,10 @@ function calcolaClassifica()
                         if (matchs[partita].penalità2 > 0)
                            penalità2 = ' *';
                         else
-                           penalità2 = ''
-                  } 
+                           penalità2 = '';
+                        turno = matchs[partita].turno;
+                        console.log('aaabb  turno A: ' + turno);
+                    } 
                     //team da stampare sulla riga è team2
                     if (matchs[partita].team2 == gruppo && matchs[partita].team1 == gruppoAvversario)
                     {
@@ -599,8 +604,10 @@ function calcolaClassifica()
                        if (matchs[partita].penalità1 > 0)
                            penalità2 = ' *';
                         else
-                           penalità2 = ''
-                   }
+                           penalità2 = '';
+                        turno = matchs[partita].turno;
+                        console.log('aaabb  turno R: ' + turno);
+                    }
 
                    //Se la partita esiste
                    if (boards > -1 || Punti1  == -1  || Punti2  == -1)  //SE -1 Forfait
@@ -658,29 +665,34 @@ function calcolaClassifica()
                            stileTD = 'style="border: 1px solid black;"';  //PERSO
                        }
 
-                       if (matchs[partita].turno == 'A') {
-                           url_A = url;
-                           stile_A = stile;
-                           stileTD_A = stileTD;
-                           risultato_A = risultato;
-                       } else {
-                           url_R = url;
-                           stile_R = stile;
-                           stileTD_R = stileTD;
-                           risultato_R = risultato;
-                       }
+                       if (turno != '') {
+                            if (turno == 'A') {
+                               url_A = url;
+                               stile_A = stile;
+                               stileTD_A = stileTD;
+                               risultato_A = risultato;
+                           } else {
+                               url_R = url;
+                               stile_R = stile;
+                               stileTD_R = stileTD;
+                               risultato_R = risultato;
+                           }
+                        }
                    }
                }
                     
+
                //Scrivo valori calcolati nella cella
                if (url == '')  { //stessa squadra
                 stRiga += '<td class="classifica-punti" style="' + stile + '"> </td>'
                } else {
-                  if (risultato_R == '') {
-                     stRiga += '<td ' + stileTD_A + '> <a style="text-decoration: none;font-weight: normal;' + stile_A + ' " href="' + url_A +'" target=”_blank”>' + risultato_A + '</a></td>';
+                  if (url_R == '') {
+                    console.log('aaabb Stampo A');
+                    stRiga += '<td ' + stileTD_A + '> <a style="text-decoration: none;font-weight: normal;' + stile_A + ' " href="' + url_A +'" target=”_blank”>' + risultato_A + '</a></td>';
                   } else {
+                    console.log('aaabb Stampo R');
                      stRiga += '<td><table class="classifica-punti-tr"><tr class="classifica-punti"><td ' + stileTD_A + '> <a style="text-decoration: none;font-weight: normal;' + stile_A + ' " href="' + url_A +'" target=”_blank”>' + risultato_A + '</a></td>';
-                     stRiga += '<td ' + stileTD_A + '> <a style="text-decoration: none;font-weight: normal;' + stile_A + ' " href="' + url_A +'" target=”_blank”>' + risultato_A + '</a></td></tr></table></td>';
+                     stRiga += '<td ' + stileTD_R + '> <a style="text-decoration: none;font-weight: normal;' + stile_R + ' " href="' + url_R +'" target=”_blank”>' + risultato_R + '</a></td></tr></table></td>';
                   }
                }
             }
