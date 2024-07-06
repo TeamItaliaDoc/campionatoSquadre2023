@@ -45,23 +45,26 @@ matchs[111] = {"turno":"R", "id":"https://api.chess.com/pub/match/1595809", "pen
 matchs[112] = {"turno":"R", "id":"https://api.chess.com/pub/match/1595811", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 matchs[113] = {"turno":"R", "id":"https://api.chess.com/pub/match/1595815", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 
-/*
-matchs[121] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-matchs[122] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-matchs[123] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+//Aprile 2024 1) Ramginghi - Nuzgul / 2) Ent - Cavalieri 3) compagnia - Aquile
+matchs[121] = {"turno":"R", "id":"https://api.chess.com/pub/match/1610197", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[122] = {"turno":"R", "id":"https://api.chess.com/pub/match/1610195", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[123] = {"turno":"R", "id":"https://api.chess.com/pub/match/1610193", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 
-matchs[131] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-matchs[132] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-matchs[133] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+//Maggio 2024 1) Nuzgul - Aquile / 2) Raminghi - Elt / 3) Compagnia - Cavalieri
+matchs[131] = {"turno":"R", "id":"https://api.chess.com/pub/match/1626673", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[132] = {"turno":"R", "id":"https://api.chess.com/pub/match/1626677", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[133] = {"turno":"R", "id":"https://api.chess.com/pub/match/1626679", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 
-matchs[141] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-matchs[142] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-matchs[143] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+//Giugno 2024 1) Nuzgul - compagnia / 2) Cavalieri - Raminghi / 3) Ent - Aquile
+matchs[141] = {"turno":"R", "id":"https://api.chess.com/pub/match/1637785", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[142] = {"turno":"R", "id":"https://api.chess.com/pub/match/1637805", "penalità1":0, "penalità2":0, "boardsPenalità":0,  "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[143] = {"turno":"R", "id":"https://api.chess.com/pub/match/1637783", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
 
-matchs[151] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-matchs[152] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-matchs[153] = {"turno":"R", "id":"https://api.chess.com/pub/match/", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
-*/
+//Luglio 2024 1) Nuzgul - Cavalieri / 2) Raminghi - Aquile / 3) Ent - compagnia
+matchs[151] = {"turno":"R", "id":"https://api.chess.com/pub/match/1648441", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[152] = {"turno":"R", "id":"https://api.chess.com/pub/match/1648443", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+matchs[153] = {"turno":"R", "id":"https://api.chess.com/pub/match/1648445", "penalità1":0, "penalità2":0, "boardsPenalità":0, "daCaricare":true,  "concluso": false, "Punti1":0, "Punti2":0,"PuntiBannati":0, "nGiocatori1":0,  "nGiocatori2":0};
+
 
 
 
